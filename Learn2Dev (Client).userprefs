@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StageObserve\StageObserveInitializer.cs">
+    <Files>
+      <File FileName="Assets\StageObserve\StageObserveInitializer.cs" Line="71" Column="12" />
+      <File FileName="Assets\Standard Assets\Vehicles\Car\Scripts\CarAIControl.cs" Line="69" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
