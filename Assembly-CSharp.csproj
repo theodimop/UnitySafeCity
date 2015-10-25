@@ -49,10 +49,12 @@
      <Compile Include="Assets\Main Menu\Scripts\Menu.cs" />
      <Compile Include="Assets\Main Menu\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Main Menu\Scripts\TabBetweenFields.cs" />
+     <Compile Include="Assets\OpenDataScreen\DropDownMenuHandle.cs" />
      <Compile Include="Assets\Scripts\scConnection\clientConnection.cs" />
      <Compile Include="Assets\Scripts\scConnection\loginScript.cs" />
      <Compile Include="Assets\Scripts\settings.cs" />
      <Compile Include="Assets\StageObserve\StageObserveInitializer.cs" />
+     <Compile Include="Assets\StageObserve\TestGithub\NewBehaviourScript.cs" />
      <Compile Include="Assets\StageObserve\pauseScript.cs" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\DiffuseReflectiveShader.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />
@@ -60,17 +62,11 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Vehicles\Car\CarGuidelines.txt" />
      <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="scMessage">
  <HintPath>C:/Users/dj_di_000/Documents/Unity Files/Learn2Dev (Client)/Assets/Plugins/scMessage.dll</HintPath>
