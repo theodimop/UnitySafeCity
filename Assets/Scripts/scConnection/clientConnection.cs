@@ -11,18 +11,21 @@ using scMessage;
 public class clientConnection
 {
     public Socket sSock;
-    private int MAX_INC_DATA = 512000;
+    //This variable is important for identifying which scene is connected to Server
+    private string instance;
+ 
 
-    public clientConnection(Socket s)
+    public clientConnection(Socket s,String instance)
     {
         sSock = s;
+        this.instance = instance;
         ThreadPool.QueueUserWorkItem(new WaitCallback(HandleConnection));
     }
 
     public void HandleConnection(object state)
     {
         Debug.Log("Connected to server.");
-        loginScript.Instance.onConnect();
+        instanceSetConnectedToServer();
 
         try
         {
@@ -58,7 +61,9 @@ public class clientConnection
 
                     if (incObject != null)
                     {
-                        loginScript.Instance.addServerMessageToQue(incObject);
+                        //  loginScript.Instance.addServerMessageToQue(incObject);
+                        //  DropDownMenuHandle.Instance.addServerMessageToQue(incObject);
+                        instanceAddMessageToQue(incObject);
                     }
                 }
                 catch (Exception er)
@@ -70,7 +75,58 @@ public class clientConnection
         catch { }
 
         Debug.Log("Disconnected from server.");
-        loginScript.Instance.connectedToServer = false;
+        //loginScript.Instance.connectedToServer = false;
+        //DropDownMenuHandle.Instance.connectedToServer = false;
+        instanceSetConnectedToServerToFalse();
         sSock.Close();
     }
+
+    //Set the bool variable connectedToServer of the right class to true
+    private void instanceSetConnectedToServer()
+    {
+        switch(instance)
+        {
+            case "opendata":
+                DropDownMenuHandle.Instance.onConnect();
+                break;
+            case "loginscript":
+                loginScript.Instance.onConnect();
+                break;
+
+        }
+    }
+    
+    //Set the bool variable connectedToServer of the right class to false
+    private void instanceSetConnectedToServerToFalse()
+    {
+        switch (instance)
+        {
+            case "opendata":
+                DropDownMenuHandle.Instance.connectedToServer = false;
+                break;
+            case "loginscript":
+                loginScript.Instance.connectedToServer = false;
+                break;
+
+        }
+    }
+
+    //Add message to proper Class que
+    private void instanceAddMessageToQue(message incObj)
+    {
+        switch (instance)
+        {
+            case "opendata":
+                DropDownMenuHandle.Instance.addServerMessageToQue(incObj);
+                break;
+            case "loginscript":
+                loginScript.Instance.addServerMessageToQue(incObj); 
+                break;
+
+        }
+    }
+
+
+
+
 }

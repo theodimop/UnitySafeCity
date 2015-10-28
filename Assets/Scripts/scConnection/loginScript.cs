@@ -257,13 +257,13 @@ public class loginScript : MonoBehaviour
 
             cSock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             cSock.Connect(new IPEndPoint(IPAddress.Parse(ipAddress), sPort));
-            clientConnection gsCon = new clientConnection(cSock);
+            clientConnection gsCon = new clientConnection(cSock,"loginscript");
         }
         catch
         {
             Debug.Log("Unable to connect to server.");
         }
-    }
+    }   
 
     public void onConnect()
     {
