@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
-using System.Collections;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
@@ -56,17 +55,11 @@ namespace UnityStandardAssets.Vehicles.Car
             m_RandomPerlin = Random.value*100;
 
             m_Rigidbody = GetComponent<Rigidbody>();
-
-
         }
-
 
 
         private void FixedUpdate()
         {
-
-
-
             if (m_Target == null || !m_Driving)
             {
                 // Car should not be moving,

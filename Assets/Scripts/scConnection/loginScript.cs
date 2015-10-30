@@ -19,8 +19,7 @@ public class loginScript : MonoBehaviour
 
     private Socket
         cSock; // client socket
-
-    public string
+    private string
         ipAddress = "127.0.0.1", // server ip address
         username = "",          //Variable from TextField
         password = "" ;         //Variable from passwordfield
@@ -155,7 +154,7 @@ public class loginScript : MonoBehaviour
                 scObject data = new scObject("registerInfo");
                 data.addString("firstname", registryCredentials[0]);
                 data.addString("lastname", registryCredentials[1]);
-                data.addString("dateofbirth", registryCredentials[2]);
+                data.addString("birthdate", registryCredentials[2]);
                 data.addString("email", registryCredentials[3]);
                 data.addString("username", registryCredentials[4]);
                 string nPass = calculateMD5Hash(registryCredentials[5]);
@@ -320,7 +319,33 @@ public class loginScript : MonoBehaviour
         switch (mess.messageText)
         {
             case "loginResponse":
-                Debug.Log("The login response returned :"+(mess.getSCObject(0).getBool("response") ? "correct" : "not correct"));
+                bool successLogin = mess.getSCObject(0).getBool("response");
+                Debug.Log("The login response returned :"+(successLogin ? "correct" : "not correct"));
+                //If Login is successful change scene and procceed to GameMenu
+                if(successLogin)
+                {
+                    Application.LoadLevel("GameMenu");
+                }
+                break;
+
+            case "opendataResponse":
+                Debug.Log("The server sent a open data response message: " + mess.messageText);
+                break;
+
+            case "registerResponse":
+                bool successRegister = mess.getSCObject(0).getBool("response");
+                Debug.Log("The login response returned :" + (successRegister ? "correct" : "not correct"));
+                //If Register is successful show the Login Menu
+                if (successRegister)
+                {
+                    MenuManager mm = GameObject.Find("Canvas").GetComponent<MenuManager>();
+                    Menu loginMenu = GameObject.Find("Login Menu").GetComponent<Menu>();
+                    mm.ShowMenu(loginMenu);
+
+                    //clear Register form
+                    RegisterForm rf = GameObject.Find("Canvas").GetComponent<RegisterForm>();
+                    rf.clearRegisterForm();
+                }
                 break;
             default:
                 Debug.Log("The server sent a message: " + mess.messageText);
