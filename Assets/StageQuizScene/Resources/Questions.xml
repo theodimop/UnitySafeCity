@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+
+<Questions>
+	<question id="1">
+		<QuestionText>Ο συμπλέκτης αντιστοιχεί στον ποδομοχλό (πεντάλ);</QuestionText>
+		<AnswerA>1 (αριστερά).</AnswerA>
+		<AnswerB>2 (στο μέσο).</AnswerB>
+		<AnswerC>3 (δεξιά).</AnswerC>
+		<CorrectAnswer>1 (αριστερά).</CorrectAnswer>
+		<img>1_3</img>
+	</question>
+
+	<question id="2">
+		<QuestionText>Η μετακίνηση του μοχλού του δείκτη αλλαγής κατευθύνσεως (φλας) σε σχέση με την κατεύθυνση που στρίβει το τιμόνι:</QuestionText>
+		<AnswerA>Είναι αντίθετη.</AnswerA>
+		<AnswerB>Είναι ίδια με αυτήν του τιμονιού.</AnswerB>
+		<AnswerC>Ποικίλει ανάλογα με τα οχήματα.</AnswerC>
+		<CorrectAnswer>Είναι ίδια με αυτήν του τιμονιού.</CorrectAnswer>
+		<img>1_6</img>
+	</question>
+
+	<question id="3">
+		<QuestionText>Το χειρόφρενο πρέπει να χρησιμοποιηθεί για να ακινητοποιήσετε το όχημα όταν σταθμεύετε: </QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>0</img>
+		<CorrectAnswer>ΝΑΙ</CorrectAnswer>
+	</question>
+	
+	<question id="4">
+		<QuestionText>Η χρήση ζώνης ασφαλείας είναι απαραίτητη και από τους επιβάτες των πίσω καθισμάτων:</QuestionText>
+		<AnswerA>Ναι, γιατί δεν προστατεύονται σε περίπτωση ατυχήματος.</AnswerA>
+		<AnswerB>Όχι, γιατί δεν προβλέπεται στον Κ.Ο.Κ.</AnswerB>
+		<AnswerC>Όχι, γιατί προστατεύονται από τα μπροστινά καθίσματα.</AnswerC>
+		<img>0</img>
+		<CorrectAnswer>Ναι, γιατί δεν προστατεύονται σε περίπτωση ατυχήματος.</CorrectAnswer>
+	</question>
+	
+	<question id="5">
+		<QuestionText>Μια ζώνη ασφαλείας που έχει συστραφεί (στρίψει) είναι επικίνδυνη:</QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<CorrectAnswer>ΝΑΙ</CorrectAnswer>
+		<img>2_6</img>
+	</question>
+	
+	<question id="6">
+		<QuestionText>Ένα παιδί κάτω των 10 ετών πρέπει να κάθεται στα πίσω καθίσματα:</QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<CorrectAnswer>ΝΑΙ</CorrectAnswer>
+		<img>0</img>
+	</question>
+	
+	<question id="7">
+		<QuestionText>Ένα επιβατηγό είναι εφοδιασμένο με ζώνες ασφαλείας για όλες του τις θέσεις. Ποια πρόσωπα πρέπει να τις φορέσουν:</QuestionText>
+		<AnswerA>Ο οδηγός και οι επιβάτες των εμπρόσθιων καθισμάτων. </AnswerA>
+		<AnswerB>Μόνο ο οδηγός.</AnswerB>
+		<AnswerC>Ο οδηγός και όλοι οι επιβάτες.</AnswerC>
+		<CorrectAnswer>Ο οδηγός και όλοι οι επιβάτες.</CorrectAnswer>
+		<img>0</img>
+	</question>
+	
+	<question id="8">
+		<QuestionText>Τι πρέπει να κάνετε βλέποντας αυτό το σήμα σε άλλη θέση πλην κόμβου:</QuestionText>
+		<AnswerA>Να σταματήσετε στο ύψος της πινακίδας και να ξεκινήσετε όταν μπορείτε να το πράξετε χωρίς κίνδυνο.</AnswerA>
+		<AnswerB>Να περάσετε με προσοχή χωρίς να σταματήσετε.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<CorrectAnswer>Να σταματήσετε στο ύψος της πινακίδας και να ξεκινήσετε όταν μπορείτε να το πράξετε χωρίς κίνδυνο.</CorrectAnswer>
+		<img>3_1</img>
+	</question>
+	
+	<question id="9">
+		<QuestionText>Αυτό το σήμα καθορίζει:</QuestionText>
+		<AnswerA>Μια περιοχή σταθμεύσεως αριστερά.</AnswerA>
+		<AnswerB>Μια προειδοποίηση για αδιέξοδο δρόμο στα αριστερά.</AnswerB>
+		<AnswerC>Διακλάδωση αριστερά με αγροτική οδό που οδηγεί σε οικισμό.</AnswerC>
+		<CorrectAnswer>Μια προειδοποίηση για αδιέξοδο δρόμο στα αριστερά.</CorrectAnswer>
+		<img>3_9</img>
+	</question>
+	
+	<question id="10">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Χώρος σταθμεύσεως οχημάτων με μειωμένη κινητικότητα.</AnswerA>
+		<AnswerB>Χώρος σταθμεύσεως αναπηρικών αμαξιδίων.</AnswerB>
+		<AnswerC>Οδός αποκλειστικής διελεύσεως αναπηρικών αμαξιδίων.</AnswerC>
+		<CorrectAnswer>Χώρος σταθμεύσεως οχημάτων με μειωμένη κινητικότητα.</CorrectAnswer>
+		<img>3_24</img>
+	</question>
+	
+	<question id="11">
+		<QuestionText>Αυτή η διακεκομμένη γραμμή μεταξύ των δύο κατευθύνσεων σας επιτρέπει να προσπεράσετε:</QuestionText>
+		<AnswerA>Μόνο ένα πολύ αργό όχημα.</AnswerA>
+		<AnswerB>Κάθε όχημα.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>3_38</img>
+		<CorrectAnswer>Κάθε όχημα.</CorrectAnswer>
+	</question>
+	
+	<question id="12">
+		<QuestionText>Ποια η σημασία της πινακίδας αυτής:</QuestionText>
+		<AnswerA>Απαγορεύεται η αναστροφή (180°).</AnswerA>
+		<AnswerB>Απαγορεύεται η αριστερή στροφή.</AnswerB>
+		<AnswerC>Απαγορεύεται η δεξιά στροφή.</AnswerC>
+		<CorrectAnswer>Απαγορεύεται η αναστροφή (180°).</CorrectAnswer>
+		<img>3_62</img>
+	</question>
+	
+	<question id="13">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Απαγορεύεται η είσοδος σε όλα τα μηχανοκίνητα οχήματα.</AnswerA>
+		<AnswerB>Απαγορεύεται η είσοδος στα ποδήλατα.</AnswerB>
+		<AnswerC>Οδός αποκλειστικής κυκλοφορίας ποδηλάτων.</AnswerC>
+		<CorrectAnswer>Απαγορεύεται η είσοδος στα ποδήλατα.</CorrectAnswer>
+		<img>3_70</img>
+	</question>
+	
+	<question id="14">
+		<QuestionText>Τι θα πρέπει να κάνετε βλέποντας αυτό το σήμα για να κατευθυνθείτε προς την Αθήνα:</QuestionText>
+		<AnswerA>Να στρίψετε δεξιά.</AnswerA>
+		<AnswerB>Να συνεχίσετε ευθεία.</AnswerB>
+		<AnswerC>Να στρίψετε αριστερά.</AnswerC>
+		<img>3_82</img>
+		<CorrectAnswer>Να στρίψετε δεξιά.</CorrectAnswer>
+	</question>
+	
+	<question id="15">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Τηλέφωνο.</AnswerA>
+		<AnswerB>Αναψυκτήριο.</AnswerB>
+		<AnswerC>Νοσοκομείο.</AnswerC>
+		<img>3_93</img>
+		<CorrectAnswer>Τηλέφωνο.</CorrectAnswer>
+	</question>
+	
+	<question id="16">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Στάση λεωφορείου ή τρόλεϊ.</AnswerA>
+		<AnswerB>Χώρος σταθμεύσεως λεωφορείων.</AnswerB>
+		<AnswerC>Απαγορεύεται η είσοδος σε λεωφορεία.</AnswerC>
+		<img>3_166</img>
+		<CorrectAnswer>Στάση λεωφορείου ή τρόλεϊ.</CorrectAnswer>
+	</question>
+	
+	<question id="17">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Απαγορεύεται η είσοδος στα ποδήλατα.</AnswerA>
+		<AnswerB>Οδός υποχρεωτικής διελεύσεως ποδηλάτων (απαγορεύεται η διέλευση άλλων οχημάτων).</AnswerB>
+		<AnswerC>Κίνδυνος λόγω διελεύσεως ποδηλατιστών.</AnswerC>
+		<img>0</img>
+		<CorrectAnswer>Οδός υποχρεωτικής διελεύσεως ποδηλάτων (απαγορεύεται η διέλευση άλλων οχημάτων).</CorrectAnswer>
+	</question>
+	
+	<question id="18">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Τουριστικές πληροφορίες.</AnswerA>
+		<AnswerB>Τηλέφωνο</AnswerB>
+		<AnswerC>Θέση για κατασκηνώσεις.</AnswerC>
+		<img>3_187</img>
+		<CorrectAnswer>Τουριστικές πληροφορίες.</CorrectAnswer>
+	</question>
+	
+	<question id="19">
+		<QuestionText>Πώς ενεργείτε βλέποντας αυτό το σήμα:</QuestionText>
+		<AnswerA>Πλησιάζετε με προσοχή τη διάβαση πεζών και παραχωρείτε την προτεραιότητα στους πεζούς που τη διασχίζουν.</AnswerA>
+		<AnswerB>Επιταχύνετε προκειμένου να περάσετε πριν από τους πεζούς.</AnswerB>
+		<AnswerC>Σταματάτε επάνω στη διάβαση πεζών.</AnswerC>
+		<img>3_195</img>
+		<CorrectAnswer>Πλησιάζετε με προσοχή τη διάβαση πεζών και παραχωρείτε την προτεραιότητα στους πεζούς που τη διασχίζουν.</CorrectAnswer>
+	</question>
+	
+	<question id="20">
+		<QuestionText>Ποια η σημασία του σήματος αυτού:</QuestionText>
+		<AnswerA>Θέση για τροχόσπιτα.</AnswerA>
+		<AnswerB>Ξενοδοχείο.</AnswerB>
+		<AnswerC>Εγκαταστάσεις υγιεινής.</AnswerC>
+		<img>3_202</img>
+		<CorrectAnswer>Εγκαταστάσεις υγιεινής.</CorrectAnswer>
+	</question>
+	
+	<question id="21">
+		<QuestionText>Αν συναντήσετε την πινακίδα αυτή, για τι πρέπει να προετοιμάζεστε:</QuestionText>
+		<AnswerA>Είσθε κοντά σε σχολείο και όλες τις ώρες της ημέρας μπορεί να συναντήσετε Σχολικό Τροχονόμο.</AnswerA>
+		<AnswerB>Είσθε κοντά σε σχολείο και τις ώρες προσελεύσεως και αποχωρήσεως μαθητών Σχολικός Τροχονόμος μπορεί να ρυθμίζει την κυκλοφορία.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>3_227</img>
+		<CorrectAnswer>Είσθε κοντά σε σχολείο και τις ώρες προσελεύσεως και αποχωρήσεως μαθητών Σχολικός Τροχονόμος μπορεί να ρυθμίζει την κυκλοφορία.</CorrectAnswer>
+	</question>
+	
+	<question id="22">
+		<QuestionText>Οδηγείτε το κόκκινο ανοιχτό αυτοκίνητο (καμπριολέ). Το μπλε αυτοκίνητο έρχεται με μεγάλη ταχύτητα:</QuestionText>
+		<AnswerA>Κατευθύνεστε προς τη διασταύρωση, αφού προειδοποιήσετε με την κόρνα, επειδή έχετε προτεραιότητα.</AnswerA>
+		<AnswerB>Είστε έτοιμος να σταματήσετε γιατί πάντα είναι πιθανή η παραβίαση της προτεραιότητάς σας.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>4_2</img>
+		<CorrectAnswer>Είστε έτοιμος να σταματήσετε γιατί πάντα είναι πιθανή η παραβίαση της προτεραιότητάς σας.</CorrectAnswer>
+	</question>
+	
+	<question id="23">
+		<QuestionText>Σε αυτή την περίπτωση:</QuestionText>
+		<AnswerA>Επιβραδύνετε.</AnswerA>
+		<AnswerB>Σταματάτε.</AnswerB>
+		<AnswerC>Περνάτε.</AnswerC>
+		<img>4_3</img>
+		<CorrectAnswer>Σταματάτε.</CorrectAnswer>
+	</question>
+	
+	<question id="24">
+		<QuestionText>Όταν το κίτρινο φως αναβοσβήνει σε μια διασταύρωση:</QuestionText>
+		<AnswerA>Οφείλετε να επιβραδύνετε ιδιαίτερα, και να παραχωρείτε την προτεραιότητα στους κινούμενους στο δρόμο που διασταυρώνεται με το δικό σας.</AnswerA>
+		<AnswerB>Ισχύουν οι πινακίδες που ρυθμίζουν την προτεραιότητα στη διασταύρωση.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>4_18</img>
+		<CorrectAnswer>Οφείλετε να επιβραδύνετε ιδιαίτερα, και να παραχωρείτε την προτεραιότητα στους κινούμενους στο δρόμο που διασταυρώνεται με το δικό σας.</CorrectAnswer>
+	</question>
+	
+	<question id="25">
+		<QuestionText>Ποιο όχημα έχει προτεραιότητα:</QuestionText>
+		<AnswerA>Το όχημα 1.</AnswerA>
+		<AnswerB>Το όχημα 2.</AnswerB>
+		<AnswerC>Κανένα και οι οδηγοί πρέπει να συνεννοηθούν.</AnswerC>
+		<img>4_55</img>
+		<CorrectAnswer>Το όχημα 1.</CorrectAnswer>
+	</question>
+	
+	<question id="26">
+		<QuestionText>Ποιος από τους οδηγούς των δύο οχημάτων πρέπει να περιμένει να περάσει ο άλλος:</QuestionText>
+		<AnswerA>Ο οδηγός του ποδηλάτου.</AnswerA>
+		<AnswerB>Ο οδηγός του αυτοκινήτου.</AnswerB>
+		<AnswerC>Πρέπει να συνεννοηθούν μεταξύ τους.</AnswerC>
+		<img>4_61</img>
+		<CorrectAnswer>Ο οδηγός του αυτοκινήτου.</CorrectAnswer>
+	</question>
+	
+	<question id="27">
+		<QuestionText>Ένα κόκκινο φανάρι υπερισχύει ενός τροχονόμου:</QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>0</img>
+		<CorrectAnswer>ΟΧΙ</CorrectAnswer>
+	</question>
+	
+	<question id="28">
+		<QuestionText>Φθάνοντας πίσω από αυτό το σχολικό λεωφορείο σε στάση:</QuestionText>
+		<AnswerA>Σταματάτε σε κάθε περίπτωση.</AnswerA>
+		<AnswerB>Επιβραδύνετε και αν ο δρόμος έχει μέχρι δύο λωρίδες σταματάτε.</AnswerB>
+		<AnswerC>Πατάτε την κόρνα.</AnswerC>
+		<img>5_1</img>
+		<CorrectAnswer>Επιβραδύνετε και αν ο δρόμος έχει μέχρι δύο λωρίδες σταματάτε.</CorrectAnswer>
+	</question>
+	
+	<question id="29">
+		<QuestionText>Επιτρέπεται να οδηγείτε:</QuestionText>
+		<AnswerA>Με ταχύτητα ίση ή μικρότερη από την υποδεικνυόμενη.</AnswerA>
+		<AnswerB>Με ταχύτητα ανώτερη της υποδεικνυόμενης.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>5_2</img>
+		<CorrectAnswer>Με ταχύτητα ίση ή μικρότερη από την υποδεικνυόμενη.</CorrectAnswer>
+	</question>
+	
+	<question id="30">
+		<QuestionText>Ποια από τις σημειούμενες πορείες πρέπει να ακολουθήσει ο μοτοσυκλετιστής για να στρίψει αριστερά από δρόμο διπλής κατευθύνσεως:</QuestionText>
+		<AnswerA>Την πορεία 1.</AnswerA>
+		<AnswerB>Την πορεία 2.</AnswerB>
+		<AnswerC>Οποιαδήποτε από τις δύο πορείες.</AnswerC>
+		<img>6_1</img>
+		<CorrectAnswer>Την πορεία 1.</CorrectAnswer>
+	</question>
+	
+	<question id="31">
+		<QuestionText>Έχετε τοποθετηθεί καλά για να:</QuestionText>
+		<AnswerA>Στρίψετε αριστερά.</AnswerA>
+		<AnswerB>Κινηθείτε ευθεία μπροστά.</AnswerB>
+		<AnswerC>Στρίψετε δεξιά.</AnswerC>
+		<img>6_11</img>
+		<CorrectAnswer>Στρίψετε δεξιά.</CorrectAnswer>
+	</question>
+	
+	<question id="32">
+		<QuestionText>Το αυτοκίνητο έχει σταματήσει σε σωστή θέση και γιατί:</QuestionText>
+		<AnswerA>Όχι διότι δεν σταμάτησε πριν από την ειδική γραμμή διακοπής πορείας στη διάβαση πεζών.</AnswerA>
+		<AnswerB>Ναι διότι σταμάτησε σε σημείο επάνω στη διάβαση ώστε ο οδηγός να ελέγχει αν έρχονται οχήματα από δεξιά.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>6_14</img>
+		<CorrectAnswer>Όχι διότι δεν σταμάτησε πριν από την ειδική γραμμή διακοπής πορείας στη διάβαση πεζών.</CorrectAnswer>
+	</question>
+	
+	<question id="33">
+		<QuestionText>Τι πρέπει να κάνετε προκειμένου να αλλάξετε λωρίδα κυκλοφορίας:</QuestionText>
+		<AnswerA>Να ελέγξετε με τους καθρέπτες και να κάνετε εγκαίρως γνωστή την πρόθεσή σας στους ακολουθούντες, χρησιμοποιώντας τους δείκτες κατευθύνσεως.</AnswerA>
+		<AnswerB>Να χρησιμοποιήσετε τους δείκτες κατευθύνσεως μόνο όταν το όχημα που ακολουθεί βρίσκεται κοντά σας.</AnswerB>
+		<AnswerC>Τίποτε, εφόσον το όχημα που ακολουθεί βρίσκεται σε αρκετή απόσταση από το δικό σας.</AnswerC>
+		<img>0</img>
+		<CorrectAnswer>Να ελέγξετε με τους καθρέπτες και να κάνετε εγκαίρως γνωστή την πρόθεσή σας στους ακολουθούντες, χρησιμοποιώντας τους δείκτες κατευθύνσεως.</CorrectAnswer>
+	</question>
+	
+	<question id="34">
+		<QuestionText>Καμία πινακίδα δεν σας απαγορεύει να σταθμεύσετε. Μπορείτε να σταθμεύσετε έτσι:</QuestionText>
+		<AnswerA>NAI</AnswerA>
+		<AnswerB>OXI</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>8_2</img>
+		<CorrectAnswer>OXI</CorrectAnswer>
+	</question>
+	
+	<question id="35">
+		<QuestionText>Το Ι.Χ. αυτοκίνητο, που έχει σταματήσει στα δεξιά του οδοστρώματος έχει παρανομήσει: </QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>8_15</img>
+		<CorrectAnswer>ΝΑΙ</CorrectAnswer>
+	</question>
+	
+	<question id="36">
+		<QuestionText>Καμία πινακίδα δεν σας απαγορεύει τη στάθμευση. Μπορείτε να σταθμεύσετε έτσι:</QuestionText>
+		<AnswerA>ΝΑΙ</AnswerA>
+		<AnswerB>ΟΧΙ</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>8_19</img>
+		<CorrectAnswer>ΟΧΙ</CorrectAnswer>
+	</question>
+	
+	<question id="37">
+		<QuestionText>Σε αυτή την κατάσταση εάν η οπισθοδρόμηση είναι απαραίτητη:</QuestionText>
+		<AnswerA>Το επιβατηγό υποχωρεί.</AnswerA>
+		<AnswerB>Το βαρύ όχημα υποχωρεί.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>9_3</img>
+		<CorrectAnswer>Το επιβατηγό υποχωρεί.</CorrectAnswer>
+	</question>
+	
+	<question id="38">
+		<QuestionText>Το όχημα 1 έχει ανάψει αριστερο φλας για να στρίψει. Το όχημα 2 μόλις προσπέρασε από τα δεξιά:</QuestionText>
+		<AnswerA>Έχει το δικαίωμα να το κάνει.</AnswerA>
+		<AnswerB>Διέπραξε αδίκημα.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>9_12</img>
+		<CorrectAnswer>Έχει το δικαίωμα να το κάνει.</CorrectAnswer>
+	</question>
+	
+	<question id="39">
+		<QuestionText>Σε αυτήν την κατάσταση, εάν είναι απαραίτητη η οπισθοδρόμηση:</QuestionText>
+		<AnswerA>Το κατερχόμενο αυτοκίνητο υποχωρεί.</AnswerA>
+		<AnswerB>Το ανερχόμενο αυτοκίνητο υποχωρεί.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>9_23</img>
+		<CorrectAnswer>Το κατερχόμενο αυτοκίνητο υποχωρεί.</CorrectAnswer>
+	</question>
+	
+	<question id="40">
+		<QuestionText>Γιατί εδώ πρέπει να οδηγείτε με ιδιαίτερη προσοχή:</QuestionText>
+		<AnswerA>Γιατί η ορατότητα εμποδίζεται από τη στροφή και το οδόστρωμα είναι βρεγμένο.</AnswerA>
+		<AnswerB>Γιατί μετά τη δεξιά στροφή μπορεί να υπάρχει επικίνδυνη αριστερή στροφή.</AnswerB>
+		<AnswerC>0</AnswerC>
+		<img>10_4</img>
+		<CorrectAnswer>Γιατί η ορατότητα εμποδίζεται από τη στροφή και το οδόστρωμα είναι βρεγμένο.</CorrectAnswer>
+	</question>
+	
+</Questions>
+

@@ -52,14 +52,32 @@ pfrPort = 2999; // policy file request port
 	// Use this for initialization
 	void Start () {
 
-        Debug.Log("|" +String.Format("{0,-8}{1,-8}","theo_","theo____")+"|");
-        Debug.Log("|"+ String.Format("{0,-8}{1,-8}", "theotheo","theotheo") + "|");
+      
+        contentText.text += PadLeftAndRight("ΤΟΠΟΘΕΣΙΑ",50) + "\t" + PadLeftAndRight( "ΏΡΑ  ",15) + "\t" + PadLeftAndRight("ΕΙΔΟΣ",22) + "\t" + PadLeftAndRight("ΑΙΤΙΑ",42) + "\t" + PadLeftAndRight("ΌΧΗΜΑ",28) + "\t" + PadLeftAndRight("ΙΔΙΟΤΗΤΑ",10) + "\t" + PadLeftAndRight("ΗΛΙΚΙΑ",7) + "\n\n";
+        /****************************/
+        message mes = new message("openDataResponse");
+                    scObject data = new scObject("data");
+                    data.addString("location", "Αγ. Παρασκεύη,Λ. Μεσογείων και Καποδιστρίου");
+                    data.addString("time", "13:00 - 17:00");
+                    data.addString("cause", "Αίτια αναφερόμενα στην οδό και τον καιρό");
+                    data.addString("type", "Άλλο ή άγνωστο είδος");
+                    data.addString("vehicle", "Φορτηγό κάτω των 3,5 τόνων");
+                    data.addString("victim", "Επιβάτης");
+                    data.addString("age", "55 +");
+                    mes.addSCObject(data);
 
-        //  contentText.text += "\n|" + String.Format("{0,-50}{1,-15}", "13ο χλμ. Επ.Οδ. Ανδρίτσαινας-Θολου, Νέα Φιγαλεια", "theo____") + "|";
-        //  contentText.text += "\n|" + String.Format("{0,-42}{1,-15}", "θοδωρης", "theo____") + "|";
-        //  contentText.text += "\n|" + String.Format("{0,-50}{1,-15}", "Λ.Γεωργίου Παπανδρέου 583 Χαλκίδα", "theotheo") + "|";
+                    scObject data1 = new scObject("data");
+                    data1.addString("location", "13ο χλμ. Επ.Οδ. Ανδρίτσαινας-Θολου, Νέα Φιγαλεια");
+                    data1.addString("time", "13:00 - 17:00");
+                    data1.addString("cause", "Αίτια αναφερόμενα στην οδό και τον καιρό");
+                    data1.addString("type", "Άλλο ή άγνωστο είδος");
+                    data1.addString("vehicle", "I.X.E   ");
+                    data1.addString("victim", "Οδηγός");
+                    data1.addString("age", "55 +");
+                    mes.addSCObject(data1);
 
-        contentText.text = fixRow("LOCATION","TIME","TYPE","CAUSE","VEHICLE","VICTIM","AGE");
+        messageToScrollviewData(mes);
+  
        connect();
 	}
 	
@@ -134,32 +152,11 @@ pfrPort = 2999; // policy file request port
 
             Debug.Log(location + "|" + time + "|" + type + "|" + cause + "|" + vehicle + "|" + victim + "|" + age);
 
-            contentText.text += fixRow(location, time, type, cause, vehicle, victim, age);
-
+            //  contentText.text += fixRow(location, time, cause, type, vehicle, victim, age);
+           contentText.text+= location.PadRight(50) + "\t" + time.PadRight(15) + "\t" + type.PadRight(22) + "\t" + cause.PadRight(42) + "\t" + vehicle.PadRight(28) + "\t" + victim.PadRight(10) + "\t" + age.PadRight(7) + "\n";
         }
     }
-    //location
-    public  string fixRow(string s0, string s1, string s2, string s3, string s4, string s5, string s6)
-    {
-        string location, time, type, cause, vehicle, victim, age;
-
-        location = PadLeftAndRight(s0, 50);
-        time = PadLeftAndRight(s1, 15);
-        type = PadLeftAndRight(s2, 22);
-        cause = PadLeftAndRight(s3, 42);
-        vehicle = PadLeftAndRight(s4, 28);
-        victim = PadLeftAndRight(s5, 10);
-        age = PadLeftAndRight(s6, 7);
-
-        Debug.Log(location + "|" + time + "|" + type + "|" + cause + "|" + vehicle + "|" + victim + "|" + age);
-        string dataRow = location + " " + time + " " + type + " " + cause + " " + vehicle + " " + victim + " " + age+"\n";
-
-        return dataRow;
-        //      12ο χλμ. Επ.Οδ.Φιλιατών - Μαυρονεριου    09:00 - 13:00   Ανατροπή Αίτια αναφερόμενα στην οδό και τον καιρό    Ι.Χ.Ε.Οδηγός  55 +        
-
-    }
-    //Pad left and right of string
-    public  string PadLeftAndRight(string source, int length)
+    public string PadLeftAndRight(string source, int length)
     {
         int spaces = length - source.Length;
         int padLeft = spaces / 2 + source.Length;
