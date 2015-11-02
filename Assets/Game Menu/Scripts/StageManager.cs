@@ -19,40 +19,34 @@ public class StageManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        setStageButtonPressed();
-     
-        
-     
+        setStageButtonPressed("quiz");
 	}
-    void Update()
-    {
-        setStageButtonPressed();
-    }
+
 
     //Stage button listeners
 
     public void buttonQuizPressed()
     {
-        PlayerPrefs.SetString("stagebuttonpressed", "quiz");
-        setStageButtonPressed();
+        setCurrentStage("quiz");
+        setStageButtonPressed("quiz");
     }
     public void buttonObservePressed()
     {
-        PlayerPrefs.SetString("stagebuttonpressed", "observe");
-        setStageButtonPressed();
+        setCurrentStage("observe");
+        setStageButtonPressed("observe");
     }
     public void buttonDrivePressed()
     {
-        PlayerPrefs.SetString("stagebuttonpressed", "drive");
-        setStageButtonPressed();
+        setCurrentStage("drive");
+        setStageButtonPressed("drive");
     }
 
 
     //Control the Stages buttons 
-    private void setStageButtonPressed()
+    private void setStageButtonPressed(string stage)
     {
            //check which button lastly pressed
-        switch (PlayerPrefs.GetString("stagebuttonpressed"))
+        switch (stage)
         {
             case "quiz":
                 buttonStageQuiz.interactable = false;

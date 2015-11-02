@@ -16,17 +16,19 @@ public class PlayerPrefsInit : MonoBehaviour {
         if (!PlayerPrefs.HasKey("level"))
             PlayerPrefs.SetInt("level", 1);
 
+        //Create a playerPref for keeping level of player
+        if (!PlayerPrefs.HasKey("stage"))
+            PlayerPrefs.SetString("stage", "quiz");
+
+
+
         //Create a playerPref for level that player is viewing in window
         if (!PlayerPrefs.HasKey("currentlevel"))
             PlayerPrefs.SetInt("currentlevel",1);
 
 
         //Create a playerPref for stage that player is viewing in window
-        if (!PlayerPrefs.HasKey("stage"))
-            PlayerPrefs.SetString("stage", "quiz");
-
-        //Create a playerPref for  stage
-        if (!PlayerPrefs.HasKey("stage"))
+        if (!PlayerPrefs.HasKey("currentstage"))
             PlayerPrefs.SetString("stage", "quiz");
 
 
@@ -77,11 +79,7 @@ public class PlayerPrefsInit : MonoBehaviour {
             PlayerPrefs.SetInt("levelscore9", 00111);
             PlayerPrefs.SetInt("levelscore10", 00111);
         }
-         //Create playerPrefs for stage button
-        if (!PlayerPrefs.HasKey("stagebuttonpressed"))
-        {
-            PlayerPrefs.SetString("stagebuttonpressed","quiz");
-        }
+     
 
 
         //Create playerPrefs for stage Scores

@@ -50,6 +50,7 @@
      <Compile Include="Assets\Game Menu\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Game Menu\Scripts\PlayerPrefsInit.cs" />
      <Compile Include="Assets\Game Menu\Scripts\StageManager.cs" />
+     <Compile Include="Assets\Game Menu\Scripts\StartButtonController.cs" />
      <Compile Include="Assets\Game Menu\Scripts\settings.cs" />
      <Compile Include="Assets\Main Menu\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Main Menu\Scripts\Menu.cs" />

@@ -60,7 +60,7 @@ public class QuestionManager : MonoBehaviour
         scoreText.text = "Score: " + score;
         
         /* Loading data from an XML file. */
-        var xml = XDocument.Load(@"Assets\StageQuizScene\Resources\Questions.xml");
+        var xml = XDocument.Load("Assets/StageQuizScene/Resources/Questions.xml");
 
 
         /* Getting the question data using linq in order to extract the information from

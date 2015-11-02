@@ -21,7 +21,3 @@ C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\Temp\bin\Debug\Unity
 C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\obj\Debug\Assembly-CSharp-firstpass.pdb
-C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\Temp\bin\Debug\UnityEngine.Advertisements.dll
-C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\Temp\bin\Debug\UnityEngine.Analytics.dll
-C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\Temp\bin\Debug\UnityEngine.Advertisements.xml
-C:\Users\dj_di_000\Documents\Unity Files\Learn2Dev (Client)\Temp\bin\Debug\UnityEngine.Analytics.xml
