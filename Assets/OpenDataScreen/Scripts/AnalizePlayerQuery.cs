@@ -26,27 +26,19 @@ namespace OpenDataScreen
             //Initialize
             emptyDropdown = false;
             //INPUT
-            string county, day, month, year, accidentType,toDay,toMonth,toYear;
+            string county, month, year, accidentType;
             //OUTPUT
-            string elCounty,fromDate, toDate,table;
+            string elCounty,dateMY,table;
 
             //GET INPUT
             county = m.getSCObject(0).getString("county");
-            day= m.getSCObject(0).getString("day");
             month = m.getSCObject(0).getString("month");
             year = m.getSCObject(0).getString("year");
             accidentType = m.getSCObject(0).getString("accidentType");
-            toDay = m.getSCObject(0).getString("toDay");
-            toMonth = m.getSCObject(0).getString("toMonth");
-            toYear = m.getSCObject(0).getString("toYear");
-            
-            //check empty lists
-            checkEmptyDropDownList(day,toDay,year,toYear);
 
             //PREPARE OUTPUT
             elCounty = getCountyInGreek(county);
-            fromDate = day + "-" + getMonth(month) + "-" + year;
-            toDate = toDay + "-" + getMonth(toMonth) + "-" + toYear;
+            dateMY = getMonth(month) + "-" + year;
             table = getAccidentType(accidentType);
 
 
@@ -54,8 +46,7 @@ namespace OpenDataScreen
             message newMes = new message("opendata");
             scObject obj = new scObject("OpenDataObject");
             obj.addString("county", elCounty);
-            obj.addString("fromDate", fromDate);
-            obj.addString("toDate", toDate);
+            obj.addString("dateMY", dateMY);
             obj.addString("table", table);
 
             newMes.addSCObject(obj);
@@ -63,19 +54,22 @@ namespace OpenDataScreen
             //return it
             if (!emptyDropdown)
             {
+                if(!accidentType.Equals("Lethals"))
+                {
+                    int num;
+                    if(month.Equals("Select month") || year.Equals("Select year") || !(int.TryParse(year, out num)))
+                    {
+                        return null;
+                    }
+                    else
+                    {
+                        return newMes;
+                    }
+                }
                 return newMes;
             }
             else
                 return null;
-        }
-
-        private void checkEmptyDropDownList(string day, string toDay, string year, string toYear)
-        {
-            int num=0;
-            if (!(int.TryParse(day, out num) || int.TryParse(toDay, out num) || int.TryParse(year, out num) || int.TryParse(toYear, out num)))
-            {
-                emptyDropdown = true;
-            }
         }
 
         private string getCountyInGreek(String c)
@@ -313,9 +307,7 @@ namespace OpenDataScreen
                 case "December":
                     month = "Δεκ";
                     break;
-                default:
-                    emptyDropdown = true;
-                    break;
+               
             }
             return month;
         }
