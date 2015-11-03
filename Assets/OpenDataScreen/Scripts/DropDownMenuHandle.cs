@@ -32,7 +32,10 @@ pfrPort = 2999; // policy file request port
     public static bool isLethalRequest;
 
     public Text textCounty, textMonth, textYear, textAccidentType,textInfoCounty,textInfoDate,textInfoTACC, contentText;
-    public int iter;
+
+    public Button nextPage;
+    public message opedDataMes=null;
+    public int objectCounter;
 
     public static DropDownMenuHandle Instance
     {
@@ -144,60 +147,111 @@ pfrPort = 2999; // policy file request port
     //Listener for button next page of Results
     public void nextPageButton()
     {
-        //Init content text
-            contentText.text = PadLeftAndRight("ΤΟΠΟΘΕΣΙΑ", 56) + "\t" + PadLeftAndRight("ΏΡΑ  ", 15) + "\t" + PadLeftAndRight("ΕΙΔΟΣ", 22) + "\t" + PadLeftAndRight("ΑΙΤΙΑ", 42) + "\t" + PadLeftAndRight("ΌΧΗΜΑ", 28) + "\t" + PadLeftAndRight("ΙΔΙΟΤΗΤΑ", 10) + "\t" + PadLeftAndRight("ΗΛΙΚΙΑ", 7) + "\n\n";
+        
+        
+        string location = "", type = "", cause = "", vehicle = "", victim = "", age = "", time = "", date = "";
+        int size = 0;
 
-              message mes = new message("openDataResponse");
-              scObject data = new scObject("data");
-              data.addString("location", "Αγ. Παρασκεύη,Λ. Μεσογείων και Καποδιστρίου");
-              data.addString("time", "13:00 - 17:00");
-              data.addString("cause", "Αίτια αναφερόμενα στην οδό και τον καιρό");
-              data.addString("type", "Άλλο ή άγνωστο είδος");
-              data.addString("vehicle", "Φορτηγό κάτω των 3,5 τόνων");
-              data.addString("victim", "Επιβάτης");
-              data.addString("age", "55 +");
-              mes.addSCObject(data);
-           //   showMoreData(mes);
+        contentText.text = PadLeftAndRight("ΗΜΕΡΟΜΗΝΙΑ", 14) + "\t" + PadLeftAndRight("ΤΟΠΟΘΕΣΙΑ", 56) + "\t" + PadLeftAndRight("ΏΡΑ  ", 15) + "\t" + PadLeftAndRight("ΕΙΔΟΣ", 22) + "\t" + PadLeftAndRight("ΑΙΤΙΑ", 42) + "\t" + PadLeftAndRight("ΌΧΗΜΑ", 28) + "\t" + PadLeftAndRight("ΙΔΙΟΤΗΤΑ", 10) + "\t" + PadLeftAndRight("ΗΛΙΚΙΑ", 7) + "\n\n";
 
- 
+        if (opedDataMes.getSCObjectCount() > objectCounter + 70)
+            size = objectCounter + 70;
+
+        else
+        {
+            size = opedDataMes.getSCObjectCount();
+            nextPage.interactable = false;
+        }
+
+        for (int i = objectCounter; i <size ; i++)
+        {
+           
+            date = opedDataMes.getSCObject(i).getString("date");
+            location = opedDataMes.getSCObject(i).getString("location");
+            time = opedDataMes.getSCObject(i).getString("time");
+            type = opedDataMes.getSCObject(i).getString("type");
+            cause = opedDataMes.getSCObject(i).getString("cause");
+            vehicle = opedDataMes.getSCObject(i).getString("vehicle");
+            victim = opedDataMes.getSCObject(i).getString("victim");
+            age = opedDataMes.getSCObject(i).getString("age");
+
+            ++objectCounter;
+            string iterS = objectCounter.ToString();
+            contentText.text += iterS.PadRight(2) + " " + date.PadRight(14) + location.PadRight(55) + "\t" + time.PadRight(15) + "\t" + type.PadRight(22) + "\t" + cause.PadRight(42) + "\t" + vehicle.PadRight(28) + "\t" + victim.PadRight(10) + "\t" + age.PadRight(7) + "\n";
+        }
+
+
     }
 
 
     public void UpdateInfoPanel(string county,string dateMY,string acType)
     {
         textInfoCounty.text = "COUNTY".PadRight(15) + ": " + county;
-        textInfoDate.text = "MONTH-YEAR".PadRight(15) + ": " + dateMY;
+        if(!isLethalRequest)
+             textInfoDate.text = "MONTH-YEAR".PadRight(15) + ": " + dateMY;
         textInfoTACC.text = "ACCIDENTS".PadRight(15) + " : " + acType;
     }
 
     //---------------------
 
-    public  void messageToScrollviewData(message mes)
+    public  void messageToScrollviewData()
     {
+        //For the next page
+        objectCounter = 0;
+        //enable next page button
+        nextPage.interactable = true;
         if (isLethalRequest)
         {
-            string location = "", type = "", cause = "", vehicle = "", victim = "", age = "", time = "";
-            int objs = mes.getSCObjectCount();
+            string location = "", type = "", cause = "", vehicle = "", victim = "", age = "", time = "",date="";
+            int objs = opedDataMes.getSCObjectCount();
 
-            contentText.text = PadLeftAndRight("ΤΟΠΟΘΕΣΙΑ", 56) + "\t" + PadLeftAndRight("ΏΡΑ  ", 15) + "\t" + PadLeftAndRight("ΕΙΔΟΣ", 22) + "\t" + PadLeftAndRight("ΑΙΤΙΑ", 42) + "\t" + PadLeftAndRight("ΌΧΗΜΑ", 28) + "\t" + PadLeftAndRight("ΙΔΙΟΤΗΤΑ", 10) + "\t" + PadLeftAndRight("ΗΛΙΚΙΑ", 7) + "\n\n";
+            contentText.text =PadLeftAndRight("ΗΜΕΡΟΜΗΝΙΑ",14)+"\t"+PadLeftAndRight("ΤΟΠΟΘΕΣΙΑ", 56) + "\t" + PadLeftAndRight("ΏΡΑ  ", 15) + "\t" + PadLeftAndRight("ΕΙΔΟΣ", 22) + "\t" + PadLeftAndRight("ΑΙΤΙΑ", 42) + "\t" + PadLeftAndRight("ΌΧΗΜΑ", 28) + "\t" + PadLeftAndRight("ΙΔΙΟΤΗΤΑ", 10) + "\t" + PadLeftAndRight("ΗΛΙΚΙΑ", 7) + "\n\n";
            
-            for (int i = 0; i < objs; i++)
+            for (int i = 0; i < 70; i++)
             {
-                location = mes.getSCObject(i).getString("location");
-                time = mes.getSCObject(i).getString("time");
-                type = mes.getSCObject(i).getString("type");
-                cause = mes.getSCObject(i).getString("cause");
-                vehicle = mes.getSCObject(i).getString("vehicle");
-                victim = mes.getSCObject(i).getString("victim");
-                age = mes.getSCObject(i).getString("age");
+                if (i == objs)
+                {
+                    nextPage.interactable = false;
+                    break;
+                }
+                    
+                date = opedDataMes.getSCObject(i).getString("date");
+                location = opedDataMes.getSCObject(i).getString("location");
+                time = opedDataMes.getSCObject(i).getString("time");
+                type = opedDataMes.getSCObject(i).getString("type");
+                cause = opedDataMes.getSCObject(i).getString("cause");
+                vehicle = opedDataMes.getSCObject(i).getString("vehicle");
+                victim = opedDataMes.getSCObject(i).getString("victim");
+                age = opedDataMes.getSCObject(i).getString("age");
 
-
-               contentText.text += ++iter + " " + location.PadRight(55) + "\t" + time.PadRight(15) + "\t" + type.PadRight(22) + "\t" + cause.PadRight(42) + "\t" + vehicle.PadRight(28) + "\t" + victim.PadRight(10) + "\t" + age.PadRight(7) + "\n";
+                objectCounter++;
+                string iterS = objectCounter.ToString();
+               contentText.text += iterS.PadRight(2)+" " +date.PadRight(14)+ location.PadRight(55) + "\t" + time.PadRight(15) + "\t" + type.PadRight(22) + "\t" + cause.PadRight(42) + "\t" + vehicle.PadRight(28) + "\t" + victim.PadRight(10) + "\t" + age.PadRight(7) + "\n";
             }
         }
         else
         {
-            Debug.Log("Other type");
+           
+            int objs = opedDataMes.getSCObjectCount(),sumOfAcc=0;
+            string date = "";
+            int numOfAcc = 0;
+            //No need for next page here
+            nextPage.interactable = false;
+
+            contentText.text = PadLeftAndRight("ΗΜΕΡΟΜΗΝΙΑ", 14) + "\t" + PadLeftAndRight("Πλήθος Ατυχημάτων", 20)+"\n\n";
+
+            for (int i = 0; i < objs; i++)
+            {
+                date = opedDataMes.getSCObject(i).getString("date");
+                numOfAcc = opedDataMes.getSCObject(i).getInt("numOfAcc");
+
+                sumOfAcc += numOfAcc ;
+
+                ++objectCounter;
+                string iterS = objectCounter.ToString();
+                contentText.text += iterS.PadRight(2) + " " + date.PadRight(14) + PadLeftAndRight(numOfAcc.ToString(), 14) + "\n";
+            }
+            contentText.text += "\n  ΣΥΝΟΛΟ :"+sumOfAcc;
         }
     }
     public string PadLeftAndRight(string source, int length)
@@ -268,7 +322,8 @@ pfrPort = 2999; // policy file request port
         {
             case "openDataResponse":
                 Debug.Log("The open response returned :" + (mess.getSCObject(0).getString("location")));
-                messageToScrollviewData(mess);                
+                opedDataMes = mess;
+                messageToScrollviewData();            
                 break;
             default:
                 Debug.Log("The server sent a message: " + mess.messageText);
